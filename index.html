@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Oddities of World History Quiz</title>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker|Quattrocento+Sans|Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Meddon" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+<header>
+    <div>
+        <h1 class="text-center">Oddities of World History</h1>
+    </div>
+</header>
+
+<body>
+    <div id="container">
+        <div id="startPanel" class=" btn-group center-block" role="group">
+            <p>This quiz will test your knowledge of obscure historical facts. You will be presented with 10 questions. You will have 30 seconds to answer each question.</p>
+            <p> Click the Moche headdress to begin.</p>
+            <div id="startDiv">
+                <img id="startButton" src="assets/images/moche-headdressTRANS.png">
+            </div>
+        </div>
+        <div id="gamePanel" class='invisible'>
+            <div id="timerWrapper">
+                <p>You have <span id="timerDisplay"></span> seconds remaining. <span id="timesUp"></span></p>
+            </div>
+            <div id='questionContainer'>
+                <div id="question">
+                    Question
+                </div>
+                <div id="answerContainer" class="tg-wrap">
+                      <div class='optionRow'>
+                        <div id="option0" value=0 class="option">A: </div>
+                        <div id="option1" value=1 class="option">B: </div>
+                      </div>
+                      <div class='optionRow'>
+                        <div id="option2" value=2 class="option">C: </div>
+                        <div id="option3" value=3 class="option">D: </div>
+                      </div>
+                </div>
+            </div>
+            <div id="responseContainer" class='invisible'>
+                <p id='guessResponse'></p>
+                <p>Next question in <span id='guessResponseTimer'></span> seconds.</p>
+                <p id='jumpContainer'><img id="jump" src="assets/images/moche-headdressTRANS.png"><br>Jump to next question.</p>
+            </div>
+        </div>
+        <div id="endPanel" class='invisible'>
+            <p>This game is over. You got</p>
+            <p id="endScore"></p>
+            <p> of 10 questions correct.</p>
+        </div>
+    </div>
+
+<script src="./assets/javascript/game.js"></script>
+
+</body>
+
+<footer>Copyright Jeff Hartman 2018</footer>
+
+</html>

@@ -1,0 +1,173 @@
+/*ordered by:
+element
+class
+id*/
+
+/* ------------------ELEMENTS ------------------*/
+
+body {
+  font-size: 18px;
+  color: white;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+}
+
+header {
+  background-color: #670000;
+  padding: 20px;
+  border-bottom: 8px solid black;
+  font-size: 1.5em;
+  width: 80%;
+  margin: 0 auto 5px;
+
+}
+
+footer {
+  background-color: #670000;
+  padding: 30px;
+  border-top: 5px solid black;
+  font-size: .8em;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+p {
+  margin: 10px auto;
+}
+
+/* ------------------CLASSES ------------------*/
+
+.option {
+  color: black;
+  flex-basis: 40%;
+  background-color: #fff;
+}
+
+.option:hover {
+    background: radial-gradient(#F0E68C, white);
+    border: 3px solid #670000;
+}
+
+.optionRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------IDs ------------------*/
+
+#backgroundImage {
+  opacity: .8;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  z-index: -1;
+  background-repeat: repeat; 
+}
+
+#container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+#correctAnswer {
+  float: right;
+  display: inline-block;
+  width: 40%;
+}
+
+#endPanel {
+  padding: 60px;
+  height: 100%;
+  text-align: center;
+}
+
+#endScore {
+  font-size: 120px;
+  margin: 50px;
+  padding: 20px;
+
+}
+
+#gamePanel, #endPanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#jump {
+  width: 30%;
+}
+
+#jumpContainer {
+  font-size: .5em;
+  text-align: center;
+  border-radius: 8px;
+  width: 40%;
+  padding: 10px;
+  background-color: #670000;
+  border: 2px solid black;
+  float: right;
+  margin: 0;
+}
+
+#jumpContainer:hover {
+    background: radial-gradient(#F0E68C, white);
+    color: black;
+}
+
+#question {
+  color: black;
+  margin: 5px 0 15px;
+  font-size: 1.1em;
+}
+
+#question, .option {
+  padding: 20px;
+    flex: 1;
+    margin: 10px;
+  background-color: #fff;
+}
+
+#startDiv {
+  padding: 25px;
+  text-align: center;
+}
+
+#startButton {
+  width: 50%;
+}
+
+#startPanel,
+#gamePanel,
+#endPanel {
+  color: white;
+  padding: 60px;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  background-image:    radial-gradient(
+      black,
+      #f06d06
+    );
+}
+
+#timerDisplay {
+  font-size: 2em;
+}
+
+#timerWrapper {
+    margin: 0 0 30px 0;
+}
+
+#timesUp {
+  color: #ec1616;
+  font-weight: 600;
+}
+
+#wrong {
+  height: 50px;
+}
